@@ -1,0 +1,50 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to ProPlanning</title>
+    <link rel="stylesheet" href="css/login_form.css">
+    <!-- <link rel="stylesheet" href="{% static 'css/login_form.css'%}"> -->
+</head>
+
+<body>
+    <header>
+        <h1>ProPlanning</h1>
+    </header>
+
+    <div class="wrapper">
+        <div class="login-container">
+            <div class="heading">
+                Login
+            </div>
+            
+            <form action="#">
+                <div class="field">
+                    <label for="email"> Email Address : </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email Address" required>
+                </div>
+                
+                <div class="field">
+                    <label for="pswd" id={{form.name.}}>Password : </label>
+                    <input type="password" name="password" id="pswd" placeholder="Enter Your Password">
+                </div>
+
+                <div class="forgot">
+                    <a class="link" href="Forgot_password.html">Forgot Password?</a>
+                </div>
+                
+                <div class="register">
+                    <p>Not Registered ?</p>
+                    <a class="link" href="register_template.html">Register Now</a>
+                </div>
+
+                <div class="field" id="submit-button">
+                    <input class="button-hover" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

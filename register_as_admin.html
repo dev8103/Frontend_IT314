@@ -1,0 +1,82 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register as Admin</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/ css?family=Poppins:400,500,600,700&display=swap" />
+    <!-- <link rel="stylesheet" href="{% static 'css/register_as_admin.css' %}"> -->
+    <link rel="stylesheet" href="css/register_as_admin.css">
+</head>
+
+<body>
+    <header>
+        <h1>ProPlanning</h1>
+    </header>
+
+    <div class="wrapper">
+        <div class="login-container">
+            <div class="heading">
+                Register as Admin
+            </div>
+
+            <form action="#">
+
+                <div class="main-division">
+                    <div class="division">
+                        <div class="field">
+                            <label for="email"> Name : </label>
+                            <input type="email" name="name" id="name" placeholder="Enter your Name" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="email"> Contact No. : </label>
+                            <input type="number" name="Contact" id="Contact" placeholder="Enter your Contact" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="pswd">Password : </label>
+                            <input type="password" name="password" id="pswd" placeholder="Create Your Password">
+                        </div>
+                    </div>
+
+                    <div class="division">
+
+                        <div class="field">
+                            <label for="email"> Email Address : </label>
+                            <input type="email" name="email" id="email" placeholder="Enter your Email Address" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="email"> Company : </label>
+                            <input type="text" name="Company" id="Company" placeholder="Enter your Company" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="repswd">Confirm Password : </label>
+                            <input type="password" name="repassword" id="repswd" placeholder="Confirm Your Password">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="register">
+                    <p>Already Registered ?</p>
+                    <a class="link" href="login_form.html">Login Now</a>
+                </div>
+
+                <div class="field" id="submit-button">
+                    <input class="button-hover" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</head>
+
+<body>
+
+</body>
+
+</html>
