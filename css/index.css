@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 :root {
@@ -15,68 +16,118 @@
 html,body{
     height: 100%;
     width: 100%;
-    /* background-color: var(--secondary); */
 }
 
 header{
     padding: 1.2em 20px;
-    /* border: 2px black solid; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: var(--primary);
+    color: white;
     box-shadow: 0px 10px 20px var(--shadow);
+    position: sticky;
+    top: 0px;
+    right: 0px;
 }
 
-.heading{
-    color: var(--primary);
+.head{
+    color: white;
     margin: 2px;
+    font-weight: bolder;
 }
 
 .options{
     margin: 2px;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; */
-}
-
-.login-button{
-    margin: 12px px;
 }
 
 .options a{
+    color: white;
+    font-size: 1.3rem;
+    padding: 15px 10px;
+    margin: 0px 10px;
+    transition: all 0.3s;
+}
+
+.options a:hover{
     color: var(--primary);
-    font-size: 1.2rem;
-}
-
-.options a,
-.login-button{
-    text-decoration: none;
-    padding: 0px 10px;
-
-}
-
-.login-button{
-    background-color: white;
-    padding: 12px 30px;
-    border: 2px solid var(--primary);
     border-radius: 50px;
-    color: var(--primary);
-    transition: all 0.5s;
+    background-color: white;
+    transform: scale(1.1);
 }
 
-.login-button:hover{
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_main{
+    /* display: inline-block; */
+    width: 80%;
+    /* height: 500vh; */
+    height: auto;
+    /* border: 2px black solid; */
+    display: flex;
+    background-color: var(--secondary);
+    box-shadow: 10px 10px 20px var(--shadow);
+}
+
+.home_sub{
+    width: 50%;
+    height: 70vh;
+    /* border: 2px red solid; */
+}
+
+#home_img{
+    background: url('sources/hero-img.png');
+    background-size: 100% 100%;
+}
+
+.heading{
+    color: var(--primary);
+    font-size: 2.5em;
+}
+
+.slogan{
+    color: var(--primary);
+    font-size: 1.2em;
+
+}
+
+#sub1{
+    display: flex;
+    align-items: center;
+}
+
+.writing{
+    padding-left: 40px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.login-button{
     color: white;
     background-color: var(--primary);
+    padding: 20px 20px;
+    border-radius: 40px;
+    margin: 20px 5px;
+    width: 30%;
+    text-align: center;
 }
 
 
-@media only screen and (max-width:800px)
+
+/* @media only screen and (max-width:800px)
 {
     header{
         flex-direction: column;
-        flex-basis: 50px;
     }
 
     .options{
@@ -85,4 +136,4 @@ header{
         justify-content: center;
         align-items: center;
     }
-}
+} */
