@@ -88,9 +88,6 @@ header{
     align-items: flex-start;
 }
 
-.why_writing{
-    height: ;
-}
 
 .sub1{
     display: flex;
@@ -111,6 +108,11 @@ header{
     border-radius: 40px;
     text-align: center;
     font-size: 20px;
+    transition: all 0.3s;
+}
+
+.login-button:hover{
+    transform: scale(1.15);
 }
 
 .options.icon {
