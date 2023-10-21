@@ -221,3 +221,31 @@ header{
     }
 }
 
+.footerbar
+{
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.box
+{
+    justify-content: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.box a{
+    color: white;
+}
+
+.box a:hover{
+    color: var(--shadow);
+}
+
+
+
