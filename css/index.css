@@ -122,6 +122,37 @@ header{
     text-align: center;
 }
 
+.options.icon {
+    display: none;
+}
+
+@media only screen and (min-width: 820px) {
+    .options a.icon{display: none;}
+}
+
+@media only screen and (max-width: 820px) {
+    .options a{display: none;}
+    .options a.icon {
+      float: right;
+      display: block;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    /* .options.responsive {position: relative;} */
+    .options.responsive.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    
+    .options.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
 
 
 /* @media only screen and (max-width:800px)
