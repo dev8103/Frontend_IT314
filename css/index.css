@@ -224,19 +224,30 @@ header{
 .footerbar
 {
     background-color: var(--primary);
+    color: white;
+    /* width: 100%; */
+    /* justify-content: space-around; */
+}
+
+.footertop{
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
+}
+
+.footerbottom{
+    height: 10vh;
+    text-align: center;
 }
 
 .box
 {
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     color: white;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding-top: 1rem;
+    width: 33%;
+    height: 30vh
 }
 
 .box a{
@@ -246,6 +257,15 @@ header{
 .box a:hover{
     color: var(--shadow);
 }
+
+.divlink
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 
 
