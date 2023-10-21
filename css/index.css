@@ -66,7 +66,7 @@ header{
 }
 
 .home_main{
-    width: 80%;
+    width: 70%;
     height: auto;
     display: flex;
     background-color: var(--secondary);
@@ -74,7 +74,7 @@ header{
 }
 
 .home_sub{
-    width: 50%;
+    /* width: 50%; */
     height: 70vh;
     /* border: 2px red solid; */
 }
@@ -88,9 +88,20 @@ header{
     align-items: flex-start;
 }
 
-#sub1{
+.why_writing{
+    height: ;
+}
+
+.sub1{
     display: flex;
     align-items: center;
+}
+
+.para{
+    color: var(--primary);
+    font-size: 25px;
+    padding: 0px 20px 0px 0px;
+    text-align: justify;
 }
 
 .login-button{
@@ -134,11 +145,23 @@ header{
   }
 
 
-@media only screen and (min-width:820px)
+@media only screen and (min-width:1000px)
 {
-    #sub2{
-        background: url('sources/hero-img.png');
-        background-size: 100% 100%;
+    .sub1{
+        width: 60%;
+    }
+    .sub2{
+        width: 40%;
+    }
+
+    #hero_image_sub{
+        background: url('sources/hero-img.png') center no-repeat;
+        background-size: 80% 60%;
+    }
+
+    #why_sub1{
+        background: url('sources/why_proplanning.png') center no-repeat;
+        background-size: 80% 60%;
     }
     
     .heading{
@@ -154,15 +177,20 @@ header{
     .writing{
         padding-left: 40px;
     }
+
+    .why_writing{
+        height: 30vh;
+        justify-content: space-between;
+    }
 }
 
-@media only screen and (max-width:820px)
+@media only screen and (max-width:1000px)
 {
-    #sub2{
+    .sub2{
         width: 0%;
     }
 
-    #sub1{
+    .sub1{
         width: 100%;
     }
 
@@ -180,4 +208,14 @@ header{
     .slogan{
         text-align: center;
     }
+
+    .heading{
+        text-align: center;
+    }
+
+    .para{
+        font-size: 20px;
+        padding-left: 20px;
+    }
 }
+
