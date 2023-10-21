@@ -20,7 +20,9 @@
                 Login
             </div>
             
-            <form action="#">
+            <form action="#" method="post">
+                <!-- {% csrf_token %} -->
+
                 <div class="field">
                     <label for="email"> Email Address : </label>
                     <input type="email" name="email" id="email" placeholder="Enter your Email Address" required>
@@ -32,12 +34,14 @@
                 </div>
 
                 <div class="forgot">
-                    <a class="link" href="Forgot_password.html">Forgot Password?</a>
+                    <a class="link" href="forgot_password.html">Forgot Password?</a>
+                    <!-- <a class="link" href="{% url 'forgot_password.html' %}">Forgot Password?</a> -->
                 </div>
                 
                 <div class="register">
                     <p>Not Registered ?</p>
                     <a class="link" href="register_template.html">Register Now</a>
+                    <!-- <a class="link" href="{% url 'register_template.html' %}">Register Now</a> -->
                 </div>
 
                 <div class="field" id="submit-button">
