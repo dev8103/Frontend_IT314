@@ -133,8 +133,11 @@ header {
     top: 70px;
     z-index: 1;
 }
-.dpicn {
-    height: 42px;
+
+.dpicn 
+{
+    height: 40px;
+    width: 40px;
 }
 
 .main {
