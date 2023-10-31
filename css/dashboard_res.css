@@ -1,5 +1,8 @@
 /* Responsive CSS Here */
-@media screen and (max-width: 950px) {
+
+/* 
+@media screen and (max-width: 950px) 
+{
     .nav-img {
         height: 25px;
     }
@@ -14,9 +17,11 @@
     .items {
         width: 800px;
     }
-    }
+} 
+*/
     
-    @media screen and (max-width: 850px) {
+@media screen and (max-width: 850px) 
+{
     .nav-img {
         height: 30px;
     }
@@ -26,11 +31,7 @@
     .nav-option h3 {
         font-size: 20px;
     }
-    .report-topic-heading,
-    .item1,
-    .items {
-        width: 700px;
-    }
+
     .navcontainer {
         width: 100vw;
         position: absolute;
@@ -45,30 +46,23 @@
     .navclose {
         left: 00px;
     }
-    .searchbar {
-        display: none;
-    }
-    .main {
+
+    .main 
+    {
         padding: 40px 30px 30px 30px;
     }
-    .searchbar2 {
-        width: 100%;
-        display: flex;
-        margin: 0 0 40px 0;
-        justify-content: center;
-    }
-    .searchbar2 input {
-        width: 250px;
-        height: 42px;
-        border-radius: 50px 0 0 50px;
-        background-color: var(--background-color3);
-        padding: 0 20px;
-        font-size: 15px;
-        border: 2px solid var(--secondary-color);
-    }
+
+    .report-topic-heading,
+    .item1,
+    .items {
+        width: 700px;
     }
     
-    @media screen and (max-width: 490px) {
+}
+
+
+@media screen and (max-width: 490px) 
+{
     .message {
         display: none;
     }
@@ -102,9 +96,10 @@
     .items {
         width: 550px;
     }
-    }
+}
     
-    @media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) 
+{
     .recent-Articles {
         font-size: 17px;
     }
@@ -121,7 +116,7 @@
         height: 20px;
     }
     }
-    
+
     @media screen and (max-width: 320px) {
     .recent-Articles {
         font-size: 12px;
@@ -158,5 +153,5 @@
     .searchbar2 input {
         width: 180px;
     }
-    }
+}
     
