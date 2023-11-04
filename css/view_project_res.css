@@ -52,6 +52,11 @@
         padding: 40px 30px 30px 30px;
     }
 
+
+    .main-table{
+        width: 700px;
+    }
+
     .report-topic-heading,
     .item1,
     .items {
@@ -96,61 +101,58 @@
     .items {
         width: 550px;
     }
+    .project-header-btn {
+        width: 60px;
+        font-size: 12px;
+        height: 35px;
+    }
+
+    .main-table{
+        width: 550px;
+    }
 }
 
 @media screen and (max-width: 400px)
 {
-    .recent-Articles {
-        font-size: 17px;
+    .project-header {
+        height: 50px;
+        padding: 10px 5px 5px 5px;
     }
-    .view {
+     .project-header-text {
+        font-size: 18px;
+    }
+    
+    .project-header-btn {
         width: 60px;
         font-size: 10px;
         height: 27px;
     }
-    .report-header {
-        height: 60px;
-        padding: 10px 10px 5px 10px;
-    }
-    .searchbtn img {
-        height: 20px;
-    }
 }
 
 @media screen and (max-width: 320px) {
-    .recent-Articles {
-        font-size: 12px;
-    }
+
     .view {
         width: 50px;
         font-size: 8px;
         height: 27px;
     }
-    .report-header {
+    .project-header-btn {
+        width: 50px;
+        font-size: 8px;
+        height: 27px;
+    }
+    .project-header {
         height: 60px;
         padding: 10px 5px 5px 5px;
     }
-    .t-op {
-        font-size: 12px;
+     .project-header-text {
+        font-size: 20px;
     }
-    .t-op-nextlvl {
-        font-size: 10px;
-    }
-    .report-topic-heading,
-    .item1,
-    .items {
-        width: 300px;
-    }
-    .report-body {
+   
+    .project-body {
         padding: 10px;
     }
     .label-tag {
         width: 70px;
-    }
-    .searchbtn {
-        width: 40px;
-    }
-    .searchbar2 input {
-        width: 180px;
     }
 }

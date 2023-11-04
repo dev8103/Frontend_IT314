@@ -6,17 +6,42 @@ menuicn.addEventListener("click", () => {
 })
 
 const btn=document.querySelector(".button-tag");
+const item=document.querySelector("item")
 const descbox=document.querySelector(".description-box");
 
-btn.onclick=function() {showtask()};
+var totalRowCount = 0;
+var rowCount = 0;
+var table = document.getElementById("maintable");
+var rows = table.getElementsByTagName("tr");
+for (var i = 0; i < rows.length; i++) {
+    totalRowCount++;
+    if (rows[i].getElementsByTagName("td").length > 0) {
+        rowCount++;
+    }
+}
 
-function showtask(){
-    if(btn.textContent=="view"){
-    descbox.style.display="flex";
+function showtask(row,btn){
+    console.log(row);
+    if(btn.textContent=="View"){
+        descbox.style.display="flex";
+        for(let j=1;j<=totalRowCount;j++){
+            if(j==row)
+            continue;
+    const tablerow=document.getElementById(`tablerow${j}`);
+    const btn2=tablerow.querySelector(".button-tag");
+    btn2.textContent="View";
+    }
+    document.querySelector(".tasktitle1").textContent=`Task ${row}`;
     btn.textContent="Hide";
     }
     else{
-    descbox.style.display="none";
-    btn.textContent="view"; 
+        descbox.style.display="none";
+        btn.textContent="View"; 
     }
+}
+
+ for(let j=1;j<=totalRowCount;j++){
+    const tablerow=document.getElementById(`tablerow${j}`);
+    const btn2=tablerow.querySelector(".button-tag");
+    btn2.onclick=function() { console.log(tablerow); showtask(j,btn2);};
 }
