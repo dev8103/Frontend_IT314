@@ -116,7 +116,19 @@
                 alt="search-button">
         </div>
     </div> -->
-
+    <div class="desc-box">
+      <div class="description-box">
+        <div class="taskdata">
+          <span class="tasktitle">Task Name: </span><span class="tasktitle1">Task 1</span>
+         </div>
+         <div class="taskdata">
+           <span class="tasktitle">Deadline: </span><span>08/11/2023</span>
+         </div>
+         <div class="taskdata">
+           <span class="tasktitle">Description: </span><span class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, accusantium!</span>
+         </div>
+       </div>
+     </div>
 
     <div class="project-container">
       <div class="project-header">
@@ -125,7 +137,7 @@
       </div>
 
       <div class="project-body">
-        <table class="main-table">
+        <table class="main-table" id="maintable">
           <thead>
             <th>Tasks</th>
             <th>Status</th>
@@ -133,15 +145,15 @@
           </thead>
           <tbody>
 
-            <tr class="table-row">
+            <tr class="table-row" id="tablerow1">
                 <td class="table-data">Task 1</td>
                 <td class="table-data"><h3 class="label-tag">Pending</h3></td>
-                <td class="table-data"><a href="./view_project.html"><button class="button-tag">View</button></a></td>
+                <td class="table-data"><button class="button-tag">View</button></td>
             </tr>
-            <tr class="table-row">
-              <td class="table-data">task 2 </td>
+            <tr class="table-row" id="tablerow2">
+              <td class="table-data">Task 2 </td>
               <td class="table-data"><h3 class="label-tag">Pending</h3></td>
-              <td class="table-data"><a href="./view_project.html"><button class="button-tag">View</button></a></td>
+              <td class="table-data"><button class="button-tag">View</button></td>
             </tr>
 
           </tbody>

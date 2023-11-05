@@ -410,4 +410,35 @@
         color: inherit;
     }
 
+    .description-box{
+        height: 200px;
+        max-height: 300px;
+        overflow-y: auto;
+        width: 600px;
+        background-color: aqua;
+        border-radius: 12px;
+        box-shadow: 7px 6px rgb(6, 88, 88);
+        display: none;
+        flex-direction: column;
+        justify-content:space-evenly;
+     }
+
+     .taskdata{
+        font-size: 22px;
+        margin-left: 3px;
+     }
+     .tasktitle{
+        font-size: 25px;
+        font-weight: bold;
+     }
+
+     .desc-box{
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+     }
+
     

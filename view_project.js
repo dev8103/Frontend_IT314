@@ -12,7 +12,9 @@ const descbox=document.querySelector(".description-box");
 var totalRowCount = 0;
 var rowCount = 0;
 var table = document.getElementById("maintable");
+var table = document.getElementById("maintable");
 var rows = table.getElementsByTagName("tr");
+
 for (var i = 0; i < rows.length; i++) {
     totalRowCount++;
     if (rows[i].getElementsByTagName("td").length > 0) {
@@ -24,15 +26,16 @@ function showtask(row,btn){
     console.log(row);
     if(btn.textContent=="View"){
         descbox.style.display="flex";
-        for(let j=1;j<=totalRowCount;j++){
+    for(let j=1;j<=totalRowCount;j++){
             if(j==row)
             continue;
     const tablerow=document.getElementById(`tablerow${j}`);
     const btn2=tablerow.querySelector(".button-tag");
     btn2.textContent="View";
     }
-    document.querySelector(".tasktitle1").textContent=`Task ${row}`;
+    document.querySelector(".tasktitle1").textContent=`Task ${row}`;  
     btn.textContent="Hide";
+    console.log(btn);
     }
     else{
         descbox.style.display="none";
@@ -45,3 +48,5 @@ function showtask(row,btn){
     const btn2=tablerow.querySelector(".button-tag");
     btn2.onclick=function() { console.log(tablerow); showtask(j,btn2);};
 }
+
+
