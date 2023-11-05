@@ -70,7 +70,7 @@
     }
 
     .project-header-btn {
-        width: 60px;
+        width: auto;
         font-size: 12px;
         height: 35px;
     }
@@ -83,7 +83,7 @@
 @media screen and (max-width: 400px)
 {
     .project-header {
-        height: 50px;
+        height: auto;
         padding: 10px 5px 5px 5px;
     }
      .project-header-text {
@@ -91,7 +91,7 @@
     }
     
     .project-header-btn {
-        width: 60px;
+        width: auto;
         font-size: 10px;
         height: 27px;
     }
@@ -100,12 +100,12 @@
 @media screen and (max-width: 320px) {
    
     .project-header-btn {
-        width: 50px;
+        width: auto;
         font-size: 8px;
         height: 27px;
     }
     .project-header {
-        height: 60px;
+        height: auto;
         padding: 10px 5px 5px 5px;
     }
      .project-header-text {

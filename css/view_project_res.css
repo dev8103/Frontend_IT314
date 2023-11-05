@@ -1,24 +1,5 @@
 /* Responsive CSS Here */
 
-/*
-@media screen and (max-width: 950px)
-{
-    .nav-img {
-        height: 25px;
-    }
-    .nav-option {
-        gap: 30px;
-    }
-    .nav-option h3 {
-        font-size: 15px;
-    }
-    .report-topic-heading,
-    .item1,
-    .items {
-        width: 800px;
-    }
-}
-*/
 
 @media screen and (max-width: 850px)
 {
@@ -54,12 +35,18 @@
 
 
     .main-table{
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
         width: 700px;
     }
 
     .report-topic-heading,
     .item1,
     .items {
+>>>>>>> 7d43ce382f151eef1ffad863e936204d1bc5dcd4
         width: 700px;
     }
 
@@ -93,12 +80,23 @@
     .nav-upper-options {
         gap: 15px;
     }
-    .recent-Articles {
-        font-size: 20px;
+
+    .project-header-btn {
+        width: auto;
+        font-size: 12px;
+        height: 35px;
     }
-    .report-topic-heading,
-    .item1,
-    .items {
+
+    .main-table{
+        width: 550px;
+    }
+    .project-header-btn {
+        width: 60px;
+        font-size: 12px;
+        height: 35px;
+    }
+
+    .main-table{
         width: 550px;
     }
     .project-header-btn {
@@ -115,7 +113,15 @@
 @media screen and (max-width: 400px)
 {
     .project-header {
+<<<<<<< Updated upstream
         height: 50px;
+=======
+<<<<<<< HEAD
+        height: auto;
+=======
+        height: 50px;
+>>>>>>> 7d43ce382f151eef1ffad863e936204d1bc5dcd4
+>>>>>>> Stashed changes
         padding: 10px 5px 5px 5px;
     }
      .project-header-text {
@@ -123,13 +129,35 @@
     }
     
     .project-header-btn {
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+        width: auto;
+=======
+>>>>>>> Stashed changes
         width: 60px;
+>>>>>>> 7d43ce382f151eef1ffad863e936204d1bc5dcd4
         font-size: 10px;
         height: 27px;
     }
 }
 
 @media screen and (max-width: 320px) {
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+   
+    .project-header-btn {
+        width: auto;
+        font-size: 8px;
+        height: 27px;
+    }
+
+
+    .project-header {
+        height: auto;
+=======
+>>>>>>> Stashed changes
 
     .view {
         width: 50px;
@@ -143,6 +171,7 @@
     }
     .project-header {
         height: 60px;
+>>>>>>> 7d43ce382f151eef1ffad863e936204d1bc5dcd4
         padding: 10px 5px 5px 5px;
     }
      .project-header-text {

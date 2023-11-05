@@ -300,13 +300,14 @@ header {
 }
 
 .project-header {
-    height: 80px;
+    height: auto;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 20px 10px 20px;
     border-bottom: 2px solid #00303f;
+    flex-wrap: wrap;
 }
 
 .project-header-text {
