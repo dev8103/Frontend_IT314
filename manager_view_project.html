@@ -116,7 +116,7 @@
                 alt="search-button">
         </div>
     </div> -->
-    <div class="desc-box">
+    <!-- <div class="desc-box">
       <div class="description-box">
         <div class="taskdata">
           <span class="tasktitle">Task Name: </span><span class="tasktitle1">Task 1</span>
@@ -128,12 +128,15 @@
            <span class="tasktitle">Description: </span><span class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, accusantium!</span>
          </div>
        </div>
-     </div>
+     </div> -->
 
     <div class="project-container">
       <div class="project-header">
         <h1 class="project-header-text">Project name</h1>
-        <a href="./progress.html"><button class="project-header-btn">View Progress</button></a>
+        <div class="progress-create-btn">
+            <a href="./progress.html"><button class="project-header-btn">View Progresss</button></a>
+            <a href="./create_task.html"><button class="project-header-btn">Create Task</button></a>
+        </div>
       </div>
 
       <div class="project-body">
@@ -141,26 +144,24 @@
           <thead>
             <th>Tasks</th>
             <th>Status</th>
-            <th>View task</th>
+            <th>Edit task</th>
           </thead>
           <tbody>
 
             <tr class="table-row" id="tablerow1">
                 <td class="table-data">Task 1</td>
                 <td class="table-data"><h3 class="label-tag">Pending</h3></td>
-                <td class="table-data"><button class="button-tag">View</button></td>
+                <td class="table-data"><a href="edit_task.html"><button class="button-tag">Edit</button></a></td>
             </tr>
             <tr class="table-row" id="tablerow2">
               <td class="table-data">Task 2 </td>
               <td class="table-data"><h3 class="label-tag">Pending</h3></td>
-              <td class="table-data"><button class="button-tag">View</button></td>
+              <td class="table-data"><a href="edit_task.html"><button class="button-tag">Edit</button></a></td>
             </tr>
-
           </tbody>
         </table>
       </div>
-    
+      
   </div>
-  <script src="./view_project.js"></script>
 </body>
 </html>
