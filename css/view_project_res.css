@@ -108,10 +108,7 @@
 @media screen and (max-width: 400px)
 {
     .project-header {
-
-        height: 50px;
         height: auto;
-        height: 50px;
         padding: 10px 5px 5px 5px;
     }
      .project-header-text {
@@ -135,22 +132,13 @@
     }
 
 
-    .project-header {
-        height: auto;
-    }
-
-    .view {
-        width: 50px;
-        font-size: 8px;
-        height: 27px;
-    }
     .project-header-btn {
         width: 50px;
         font-size: 8px;
         height: 27px;
     }
     .project-header {
-        height: 60px;
+        height: auto;
         padding: 10px 5px 5px 5px;
     }
      .project-header-text {
