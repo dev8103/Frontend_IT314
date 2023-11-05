@@ -34,19 +34,14 @@
     }
 
 
-    .main-table{
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
+    .main-table
+    {
         width: 700px;
     }
 
     .report-topic-heading,
     .item1,
     .items {
->>>>>>> 7d43ce382f151eef1ffad863e936204d1bc5dcd4
         width: 700px;
     }
 
@@ -113,15 +108,10 @@
 @media screen and (max-width: 400px)
 {
     .project-header {
-<<<<<<< Updated upstream
+
         height: 50px;
-=======
-<<<<<<< HEAD
         height: auto;
-=======
         height: 50px;
->>>>>>> 7d43ce382f151eef1ffad863e936204d1bc5dcd4
->>>>>>> Stashed changes
         padding: 10px 5px 5px 5px;
     }
      .project-header-text {
@@ -129,24 +119,15 @@
     }
     
     .project-header-btn {
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
         width: auto;
-=======
->>>>>>> Stashed changes
         width: 60px;
->>>>>>> 7d43ce382f151eef1ffad863e936204d1bc5dcd4
         font-size: 10px;
         height: 27px;
     }
 }
 
-@media screen and (max-width: 320px) {
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-   
+@media screen and (max-width: 320px) 
+{
     .project-header-btn {
         width: auto;
         font-size: 8px;
@@ -156,8 +137,6 @@
 
     .project-header {
         height: auto;
-=======
->>>>>>> Stashed changes
 
     .view {
         width: 50px;
@@ -171,7 +150,6 @@
     }
     .project-header {
         height: 60px;
->>>>>>> 7d43ce382f151eef1ffad863e936204d1bc5dcd4
         padding: 10px 5px 5px 5px;
     }
      .project-header-text {
