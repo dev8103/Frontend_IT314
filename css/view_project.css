@@ -421,6 +421,11 @@
         display: none;
         flex-direction: column;
         justify-content:space-evenly;
+        transition: all 0.4s;
+     }
+     
+     .description-box:hover{
+        transform: scale(1.1);
      }
 
      .taskdata{
@@ -441,4 +446,9 @@
         flex-wrap: wrap;
      }
 
-    
+    .btns{
+        transition: all 0.4s;
+    }
+    .btns:hover{
+        transform: scale(1.1);
+    }

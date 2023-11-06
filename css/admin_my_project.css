@@ -440,5 +440,11 @@
         align-items: center;
         flex-wrap: wrap;
      }
+     .btns{
+        transition: all 0.4s;
+     }
 
+     .btns:hover{
+        transform: scale(1.1);
+     }
     

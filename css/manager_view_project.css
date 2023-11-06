@@ -402,6 +402,13 @@
         cursor: pointer;
         padding: 2px;
     }
+    .btns{
+        transition: all 0.4s;
+    }
+
+    .btns:hover{
+        transform: scale(1.1);
+    }
     
     .table-data a:link,a:visited{
         text-decoration: none;
@@ -444,7 +451,7 @@
 
      .progress-create-btn{
         display: flex;
-        justify-content: space-between; 
+        justify-content: space-between;
      }
 
     

@@ -5,8 +5,7 @@ menuicn.addEventListener("click", () => {
     nav.classList.toggle("navclose");
 })
 
-const btn=document.querySelector(".button-tag");
-const item=document.querySelector("item")
+
 const descbox=document.querySelector(".description-box");
 
 var totalRowCount = 0;
@@ -21,12 +20,11 @@ for (var i = 0; i < rows.length; i++) {
         rowCount++;
     }
 }
-
 function showtask(row,btn){
     console.log(row);
     if(btn.textContent=="View"){
         descbox.style.display="flex";
-    for(let j=1;j<=totalRowCount;j++){
+    for(let j=1;j<=rowCount;j++){
             if(j==row)
             continue;
     const tablerow=document.getElementById(`tablerow${j}`);
@@ -42,8 +40,7 @@ function showtask(row,btn){
         btn.textContent="View"; 
     }
 }
-
- for(let j=1;j<=totalRowCount;j++){
+ for(let j=1;j<=rowCount;j++){
     const tablerow=document.getElementById(`tablerow${j}`);
     const btn2=tablerow.querySelector(".button-tag");
     btn2.onclick=function() { console.log(tablerow); showtask(j,btn2);};
