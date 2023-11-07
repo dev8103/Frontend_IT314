@@ -41,7 +41,7 @@
     margin: 15px 0px;
 }
 
-#title,#manager,#deadline,#description,#employee{
+#title,#manager,#deadline,#description,#employee,#projectstatus{
     width: 80%;
     height: 40px;
     margin-top: 10px;
