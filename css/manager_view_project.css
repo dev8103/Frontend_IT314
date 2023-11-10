@@ -355,7 +355,7 @@
     
     .table-data{
         text-align: center;
-        width: 33%;
+        width: 16%;
         font-size: 14px;
         letter-spacing: 0px;
         font-weight: 600;
@@ -452,6 +452,7 @@
      .progress-create-btn{
         display: flex;
         justify-content: space-between;
+        width: 20%;
      }
 
     

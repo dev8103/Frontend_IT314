@@ -10,9 +10,9 @@
 				initial-scale=1.0">
   <title>View Project</title>
   <link rel="stylesheet"
-        href="./css/view_project.css">
+        href="./css/manager_view_project.css">
   <link rel="stylesheet"
-        href="./css/view_project_res.css">
+        href="./css/manager_view_project_res.css">
 </head>
 
 <body>
@@ -145,6 +145,7 @@
             <th>Tasks</th>
             <th>Status</th>
             <th>Edit task</th>
+            <th>Delete task</th>
           </thead>
           <tbody>
 
@@ -152,16 +153,18 @@
                 <td class="table-data">Task 1</td>
                 <td class="table-data"><h3 class="label-tag">Pending</h3></td>
                 <td class="table-data"><a href="edit_task.html"><button class="button-tag btns">Edit</button></a></td>
-            </tr>
-            <tr class="table-row" id="tablerow2">
-              <td class="table-data">Task 2 </td>
-              <td class="table-data"><h3 class="label-tag">Pending</h3></td>
-              <td class="table-data"><a href="edit_task.html"><button class="button-tag btns">Edit</button></a></td>
+                <td class="table-data"><button class="button-tag btns" onclick="deleteRow(this)">Delete</button></td>
+              </tr>
+              <tr class="table-row" id="tablerow2">
+                <td class="table-data">Task 2 </td>
+                <td class="table-data"><h3 class="label-tag">Pending</h3></td>
+                <td class="table-data"><a href="edit_task.html"><button class="button-tag btns">Edit</button></a></td>
+                <td class="table-data"><button class="button-tag btns" onclick="deleteRow(this)">Delete</button></td>
             </tr>
           </tbody>
         </table>
       </div>
-      
   </div>
+  <script src="manager_view_project.js"></script>
 </body>
 </html>
