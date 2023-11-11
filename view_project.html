@@ -14,7 +14,6 @@
   <link rel="stylesheet"
         href="./css/view_project_res.css">
 </head>
-
 <body>
 
 <!-- for header part -->
@@ -133,7 +132,10 @@
     <div class="project-container">
       <div class="project-header">
         <h1 class="project-header-text">Project name</h1>
-        <a href="./progress.html"><button class="project-header-btn btns">View Progress</button></a>
+        <div class="progess-edit-btn">
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Status.." title="Type in a name">
+          <a href="./progress.html"><button class="project-header-btn btns">View Progress</button></a>
+        </div>
       </div>
 
       <div class="project-body">

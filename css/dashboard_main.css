@@ -411,3 +411,17 @@ letter-spacing: 3px;
 .table-data a{
     color: inherit;
 }
+
+.project-header input{
+    width: auto;
+    height: 30px;
+    border-style: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2px;
+    color: white;
+    background-color:#0e5469;
+}
+.project-header input::placeholder{
+    color: white;
+}
