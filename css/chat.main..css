@@ -147,7 +147,7 @@ header {
 .main {
     height: calc(100vh - 70px);
     width: 100%;
-    overflow-y: scroll;
+    height: 100%;
     overflow-x: hidden;
     padding: 40px 30px 30px 30px;
 }
@@ -233,14 +233,14 @@ header {
     gap: 30px;
 }
 
-.option1 {
+.option5 {
     border-left: 5px solid #010058af;
     background-color: var(--Border-color);
     color: white;
     cursor: pointer;
 }
 
-.option1:hover {
+.option5:hover {
     border-left: 5px solid #010058af;
     background-color: var(--Border-color);
 }
@@ -452,7 +452,7 @@ a:visited {
     margin: auto;
     margin-top: 1rem;
     letter-spacing: 0.5px;
-    height: 70%;
+    height: 80%;
 
 }
 
@@ -462,7 +462,7 @@ a:visited {
 .msg-header {
     border: 1px solid white;
     width: 100%;
-    height: 10%;
+    height: 40px;
     border-bottom: none;
     display: inline-block;
     background-color: white;
@@ -517,8 +517,9 @@ a:visited {
 }
 
 .msg-page {
-    max-height: 330px;
+    max-height: 305px;
     overflow-y: auto;
+
 }
 
 /* Styling the msg-bottom container */
@@ -540,7 +541,8 @@ a:visited {
     margin-right: 0px;
     margin-left: 0px;
     outline: none !important;
-    border-radius: 22px;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 19px;
     width: 100% !important;
     background-color: white;
     position: relative;
@@ -581,7 +583,7 @@ a:visited {
     font-size: 1.75rem;
     font-weight: b;
     line-height: 1.5;
-    color: #495057;
+    color: #00303f;
     text-align: center;
     white-space: nowrap;
     background-color: #e9ecef;
@@ -618,7 +620,7 @@ input:focus {
 .received-msg-inbox p {
     background: #efefef none repeat scroll 0 0;
     border-radius: 10px;
-    color: #646464;
+    color: #00303f;
     font-size: 14px;
     margin-left: 1rem;
     padding: 1rem;
@@ -638,7 +640,7 @@ input:focus {
 
 /* Styling the msg-sent time  */
 .time {
-    color: #777;
+    color: #00303f;
     display: block;
     font-size: 12px;
     margin: 8px 0 0;
@@ -650,8 +652,8 @@ input:focus {
 }
 
 .outgoing-chats-msg p {
-    background-color: #3a12ff;
-    background-image: #3a12ff;
+    background-color: #00303f;
+    background-image: #00303f;
     color: #fff;
     border-radius: 10px;
     font-size: 14px;
@@ -665,9 +667,12 @@ input:focus {
 .outgoing-chats-msg {
     float: right;
     width: 46%;
+
 }
 
-
+.multi-msg {
+    margin-top: 4px;
+}
 
 
 @media only screen and (max-device-width: 850px) {
