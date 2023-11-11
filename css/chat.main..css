@@ -452,7 +452,7 @@ a:visited {
     margin: auto;
     margin-top: 1rem;
     letter-spacing: 0.5px;
-    height: 50%;
+    height: 70%;
     width: 60%;
 }
 
@@ -465,12 +465,12 @@ img {
 
 /* Styling the msg-header container */
 .msg-header {
-    border: 1px solid #ccc;
+    border: 1px solid white;
     width: 100%;
     height: 10%;
     border-bottom: none;
     display: inline-block;
-    background-color: #efefef;
+    background-color: white;
     margin: 0;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -511,37 +511,42 @@ img {
 .msg-inbox {
     border: 2px solid white;
     overflow: hidden;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 22px;
+    border-radius: 22px;
+    width: 100%;
 }
 
 
 .chats {
-    padding: 30px 15px 0 35px;
+    padding: 3px 3px 3px 3px;
 }
 
 .msg-page {
-    max-height: 280px;
+    max-height: 330px;
     overflow-y: auto;
 }
 
 /* Styling the msg-bottom container */
-.msg-bottom {
+/*.msg-bottom {
     border-top: 2px solid white;
     position: relative;
-    height: 5%;
+    height: 4%;
     width: 100%;
     background-color: white;
-}
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}*/
 
 /* Styling the input field */
 .input-group {
+    height: 40px;
     float: right;
-    margin-top: 13px;
-    margin-right: 20px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
     outline: none !important;
-    border-radius: 20px;
-    width: 61% !important;
+    border-radius: 22px;
+    width: 100% !important;
     background-color: white;
     position: relative;
     display: flex;
@@ -561,12 +566,12 @@ img {
     border: none !important;
     border-radius: 20px !important;
     display: block;
-    height: calc(2.25rem + 2px);
+    height: calc(2.5rem + 2px);
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 2;
     color: #495057;
-    background-color: #fff;
+    background-color: white;
     background-clip: padding-box;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
@@ -578,7 +583,7 @@ img {
     align-items: center;
     padding: 0.375rem 0.75rem;
     margin-bottom: 0;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: b;
     line-height: 1.5;
     color: #495057;
@@ -602,11 +607,7 @@ input:focus {
 }
 
 /* Styling the avatar  */
-received-chats-img {
-    display: inline-block;
-    width: 50px;
-    /*float: left;*/
-}
+
 
 .received-msg {
     display: inline-block;
@@ -630,8 +631,14 @@ received-chats-img {
     box-shadow: rgb(0 0 0 / 25%) 0px 5px 5px 2px;
 }
 
-p {
+.active p {
     overflow-wrap: break-word;
+    margin-left: 250%;
+    margin-top: 7%;
+    color: #00303f;
+    font-size: 18px;
+    width: 90%;
+
 }
 
 /* Styling the msg-sent time  */
@@ -649,7 +656,7 @@ p {
 
 .outgoing-chats-msg p {
     background-color: #3a12ff;
-    background-image: linear-gradient(45deg, #ee087f 0%, #DD2A7B 25%, #9858ac 50%, #8134AF 75%, #515BD4 100%);
+    background-image: #3a12ff;
     color: #fff;
     border-radius: 10px;
     font-size: 14px;
@@ -665,13 +672,8 @@ p {
     width: 46%;
 }
 
-/* Styling the avatar */
-.outgoing-chats-img {
-    display: inline-block;
-    width: 50px;
-    /*float: right;*/
-    margin-right: 1rem;
-}
+
+
 
 @media only screen and (max-device-width: 850px) {
 
@@ -732,4 +734,5 @@ p {
 .nav-img {
     height: 30px;
     width: 30px;
+    margin-bottom: 50%;
 }
