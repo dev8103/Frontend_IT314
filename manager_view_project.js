@@ -106,6 +106,15 @@ function myFunction(filter) {
   var table, tr, td, i, txtValue;
   // input = document.getElementById("myInput");
   // filter = input.value.toUpperCase();
+  if(filter=="I"){
+    filter="Pending";
+  }
+  if(filter=="C"){
+    filter="Completed";
+  }
+  if(filter=="S"){
+    filter="Submitted for review";
+  }
   filter=filter.toUpperCase();
   if(filter=="SHOW ALL" || filter=="#"){
     filter="";
