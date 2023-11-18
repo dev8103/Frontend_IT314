@@ -88,16 +88,19 @@ function deleteRow(r) {
 // }
 
 document.querySelector(".statuscheck").addEventListener('click',()=>{
-    if(document.querySelector(".statuscheck").textContent=="Submitted for review"){
-        let text = "Press a OK for Submit Task!";
-        if (confirm(text) == true) {
-            document.querySelector(".statuscheck").textContent="Compeleted";
-        } else {
-            document.querySelector(".statuscheck").textContent="Pending";
-        }
+  if(document.querySelector(".statuscheck").textContent=="Submitted for review"){
+     document.querySelector(".confirmation").style.display="flex";
     }
+  })
+document.querySelector(".confirmation-btn1").addEventListener('click',()=>{
+   document.querySelector(".statuscheck").textContent="Completed";
+   document.querySelector(".confirmation").style.display="none";
 });
-
+document.querySelector(".confirmation-btn2").addEventListener('click',()=>{
+   document.querySelector(".statuscheck").textContent="Inprogress";
+   document.querySelector(".confirmation").style.display="none";
+});
+  
 
 function myFunction(filter) {
   var table, tr, td, i, txtValue;
