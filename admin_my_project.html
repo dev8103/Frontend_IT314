@@ -120,9 +120,17 @@
 
     <div class="project-container">
       <div class="project-header">
-        <h1 class="project-header-text">My Projects</h1>
+        <div class="status-container">
+          <h1 class="project-header-text">My Projects</h1>
+          <select id="select1" onchange="getOption()">
+            <option value="#">Search for status</option>
+            <option value="Show all">Show all</option>
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </div>
         <div class="progess-edit-btn">
-          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Status.." title="Type in a name">
+          <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Status.." title="Type in a name"> -->
           <a href="./create_project.html"><button class="project-header-btn btns">Create Project</button></a>
         </div>
       </div>

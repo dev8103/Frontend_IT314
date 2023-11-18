@@ -130,12 +130,28 @@
        </div>
      </div> -->
    
-    <div class="project-container">
-            <a href="task_details.html"><button class="details-btn btns" id="taskdetails">Task Details</button></a>
-            <a href="edit_task.html"> <button class="details-btn btns">Edit Task</button></a>
-            <button class="details-btn btns" id="deletebtn" onclick="deleteRow(this)">Delete Task</button>
-           </div>
-    </div>
+  <div class="project-container">
+      <div class="taskdata">
+          <span class="tasktitle">Task Name: </span><span class="tasktitle1">Task 1</span>
+      </div>
+      <div class="taskdata">
+          <span class="tasktitle">Owner Name: </span><span>Name</span>
+      </div>
+      <div class="taskdata">
+          <span class="tasktitle">Email ID: </span><span>ID</span>
+      </div>
+      <div class="taskdata">
+          <span class="tasktitle">Deadline: </span><span>08/11/2023</span>
+      </div>
+      <div class="taskdata">
+          <span class="tasktitle">Description: </span><span class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, accusantium!</span>
+      </div>
+</div>
+<div class="editdeletebtn">
+  <a href="edit_task.html"> <button class="details-btn btns">Edit Task</button></a>
+  <button class="details-btn btns" id="deletebtn" onclick="deleteRow(this)">Delete Task</button>
+</div>
+
   <script src="manager_view_project.js"></script>
 </body>
 </html>

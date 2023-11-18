@@ -47,10 +47,14 @@ function showtask(row,btn){
 }
 
 
-function myFunction() {
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
+function myFunction(filter) {
+    var table, tr, td, i, txtValue;
+    // input = document.getElementById("myInput");
+    // filter = input.value.toUpperCase();
+    filter=filter.toUpperCase();
+    if(filter=="SHOW ALL"){
+      filter="";
+    }
     table = document.querySelector(".main-table");
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
@@ -65,3 +69,9 @@ function myFunction() {
       }       
     }
   }
+  function getOption() {
+    selectElement = document.querySelector('#select1');
+    output = selectElement.value;
+    myFunction(output);
+}
+  

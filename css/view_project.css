@@ -469,6 +469,18 @@
     .progress-edit-btn{
         display: flex;
         justify-content: space-between;
-        width: 470px;
+        width: 300px;
      }
-
+     .status-container{
+        display: flex;
+        justify-content: space-evenly;
+        width: 400px;
+     }
+     #select1{
+        background-color: #5500cb;
+        color: white;
+        font-size: 14px;
+        border: none;
+        border-radius: 10px;
+     }
+     

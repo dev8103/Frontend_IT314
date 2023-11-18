@@ -144,11 +144,18 @@
 
 			<div class="project-container">
 				<div class="project-header">
-				  <h1 class="project-header-text">Recent Project</h1>
+					<div class="status-container">
+						<h1 class="project-header-text">Recent Projects</h1>
+						<select id="select1" onchange="getOption()">
+						  <option value="#">Search for status</option>
+						  <option value="Show all">Show all</option>
+						  <option value="Pending">Pending</option>
+						  <option value="Completed">Completed</option>
+						</select>
+					  </div>
 				  <!-- <a href=""><button class="project-header-btn">View Progress</button></a> -->
-				  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Status.." title="Type in a name">
+				  <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Status.." title="Type in a name"> -->
 				</div>
-		  
 				<div class="project-body">
 				  <table class="main-table">
 					<thead>

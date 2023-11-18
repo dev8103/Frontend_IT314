@@ -453,7 +453,7 @@
      .progress-create-btn{
         display: flex;
         justify-content: space-between;
-        width: 600px;
+        width: 400px;
      }
 
      .details-container{
@@ -519,3 +519,17 @@
     .project-header input::placeholder{
         color: white;
     }
+
+    .status-container{
+        display: flex;
+        justify-content: space-evenly;
+        width: 400px;
+     }
+     #select1{
+        background-color: #5500cb;
+        color: white;
+        font-size: 14px;
+        border: none;
+        border-radius: 10px;
+     }
+     

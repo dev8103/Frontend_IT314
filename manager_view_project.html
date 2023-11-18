@@ -132,12 +132,20 @@
  
     <div class="project-container">
       <div class="project-header">
-        <h1 class="project-header-text">Project name</h1>
+        <div class="status-container">
+          <h1 class="project-header-text">Project name</h1>
+          <select id="select1" onchange="getOption()">
+            <option value="#">Search for status</option>
+            <option value="Show all">Show all</option>
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </div>
         <div class="progress-create-btn">
             <a href="./project_details.html"><button class="project-header-btn btns">View Project Details</button></a>
             <a href="./progress.html"><button class="project-header-btn btns">View Progress</button></a>
             <a href="./create_task.html"><button class="project-header-btn btns">Create Task</button></a>
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Status.." title="Type in a name">
+            <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Status.." title="Type in a name"> -->
         </div>
       </div>
 
