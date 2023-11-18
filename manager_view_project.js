@@ -107,7 +107,7 @@ function myFunction(filter) {
   // input = document.getElementById("myInput");
   // filter = input.value.toUpperCase();
   filter=filter.toUpperCase();
-  if(filter=="SHOW ALL"){
+  if(filter=="SHOW ALL" || filter=="#"){
     filter="";
   }
   table = document.querySelector(".main-table");
@@ -127,6 +127,7 @@ function myFunction(filter) {
 function getOption() {
   selectElement = document.querySelector('#select1');
   output = selectElement.value;
+  console.log(output);
   myFunction(output);
 }
 

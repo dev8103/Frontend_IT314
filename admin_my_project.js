@@ -14,7 +14,7 @@ function myFunction(filter) {
   // input = document.getElementById("myInput");
   // filter = input.value.toUpperCase();
   filter=filter.toUpperCase();
-  if(filter=="SHOW ALL"){
+  if(filter=="SHOW ALL" || filter=='#'){
     filter="";
   }
   table = document.querySelector(".main-table");
