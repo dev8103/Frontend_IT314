@@ -129,31 +129,15 @@
          </div>
        </div>
      </div> -->
-     <div class="desc-box">
-       <div class="description-box">
-         <div class="taskdata">
-           <span class="tasktitle">Task Name: </span><span class="tasktitle1">Task 1</span>
-          </div>
-          <div class="taskdata">
-            <span class="tasktitle">Deadline: </span><span>08/11/2023</span>
-          </div>
-          <div class="taskdata">
-            <span class="tasktitle">Description: </span><span class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, accusantium!</span>
-          </div>
-       </div>
-       <div class="details-container">
-         <button class="details-btn btns" id="taskdetails">Task Details</button>
-         <a href="edit_task.html"> <button class="details-btn btns">Edit Task</button></a>
-         <button class="details-btn btns" id="deletebtn">Delete Task</button>
-        </div>
-       </div>
-
+ 
     <div class="project-container">
       <div class="project-header">
         <h1 class="project-header-text">Project name</h1>
         <div class="progress-create-btn">
+            <a href="./project_details.html"><button class="project-header-btn btns">View Project Details</button></a>
             <a href="./progress.html"><button class="project-header-btn btns">View Progress</button></a>
             <a href="./create_task.html"><button class="project-header-btn btns">Create Task</button></a>
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Status.." title="Type in a name">
         </div>
       </div>
 
@@ -165,20 +149,27 @@
             <th>View task</th>
           </thead>
           <tbody>
-
             <tr class="table-row" id="tablerow1">
                 <td class="table-data">Task 1</td>
                 <td class="table-data"><h3 class="label-tag">Pending</h3></td>
                 <!-- <td class="table-data"><a href="edit_task.html"><button class="button-tag btns">Edit</button></a></td>
                 <td class="table-data"><button class="button-tag btns" onclick="deleteRow(this)">Delete</button></td> -->
-                <td class="table-data"><button class="button-tag btns">View</button></td>
+                <td class="table-data"><a href="manager_view_details.html"><button class="button-tag btns">View</button></a></td>
               </tr>
               <tr class="table-row" id="tablerow2">
                 <td class="table-data">Task 2 </td>
-                <td class="table-data"><h3 class="label-tag statuscheck">Pending</h3></td>
+                <td class="table-data"><h3 class="label-tag">Pending</h3></td>
                 <!-- <td class="table-data"><a href="edit_task.html"><button class="button-tag btns">Edit</button></a></td>
                 <td class="table-data"><button class="button-tag btns" onclick="deleteRow(this)">Delete</button></td> -->
-                <td class="table-data"><button class="button-tag btns">View</button></td>
+                <td class="table-data"><a href="manager_view_details.html"><button class="button-tag btns">View</button></a></td>
+            </tr>
+              </tr>
+              <tr class="table-row" id="tablerow3">
+                <td class="table-data">Task 3 </td>
+                <td class="table-data"><h3 class="label-tag statuscheck">Submitted for review</h3></td>
+                <!-- <td class="table-data"><a href="edit_task.html"><button class="button-tag btns">Edit</button></a></td>
+                <td class="table-data"><button class="button-tag btns" onclick="deleteRow(this)">Delete</button></td> -->
+                <td class="table-data"><a href="manager_view_details.html"><button class="button-tag btns">View</button></a></td>
             </tr>
           </tbody>
         </table>

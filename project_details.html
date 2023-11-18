@@ -8,12 +8,15 @@
   <meta name="viewport"
         content="width=device-width,
 				initial-scale=1.0">
-  <title>View Project</title>
+  <title>Project Detail</title>
   <link rel="stylesheet"
-        href="./css/view_project.css">
+        href="./css/manager_view_project_res.css">
   <link rel="stylesheet"
-        href="./css/view_project_res.css">
+        href="./css/task_details.css">
+  <!-- <link rel="stylesheet"
+        href="./css/manager_view_details.css"> -->
 </head>
+
 <body>
 
 <!-- for header part -->
@@ -115,45 +118,34 @@
                 alt="search-button">
         </div>
     </div> -->
-    
+    <!-- <div class="desc-box">
+      <div class="description-box">
+        <div class="taskdata">
+          <span class="tasktitle">Task Name: </span><span class="tasktitle1">Task 1</span>
+         </div>
+         <div class="taskdata">
+           <span class="tasktitle">Deadline: </span><span>08/11/2023</span>
+         </div>
+         <div class="taskdata">
+           <span class="tasktitle">Description: </span><span class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, accusantium!</span>
+         </div>
+       </div>
+     </div> -->
+   
     <div class="project-container">
-      <div class="project-header">
-        <h1 class="project-header-text">Project name</h1>
-        <div class="progress-edit-btn">
-          <a href="./project_details.html"><button class="project-header-btn btns">View Project Details</button></a>
-          <a href="./progress.html"><button class="project-header-btn btns">View Progress</button></a>
-          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Status.." title="Type in a name">
-        </div>
-      </div>
-      <div class="project-body">
-        <table class="main-table" id="maintable">
-          <thead>
-            <th>Tasks</th>
-            <th>Status</th>
-            <th>View task</th>
-          </thead>
-          <tbody>
-
-            <tr class="table-row" id="tablerow1">
-                <td class="table-data">Task 1</td>
-                <td class="table-data"><h3 class="label-tag">Pending</h3></td>
-                <td class="table-data"><a href="task_details.html"><button class="button-tag btns">View</button></a></td>
-            </tr>
-            <tr class="table-row" id="tablerow2">
-                <td class="table-data">Task 2</td>
-                <td class="table-data"><h3 class="label-tag">Pending</h3></td>
-                <td class="table-data"><a href="task_details.html"><button class="button-tag btns">View</button></a></td>
-            </tr>
-            <tr class="table-row" id="tablerow3">
-              <td class="table-data">Task 3</td>
-              <td class="table-data"><h3 class="label-tag">Pending</h3></td>
-              <td class="table-data"><a href="task_details.html"><button class="button-tag btns">View</button></a></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    
-  </div>
-  <script src="./view_project.js"></script>
+            <div class="taskdata">
+                <span class="tasktitle">Project Name: </span><span class="tasktitle1">Project 1</span>
+            </div>
+            <div class="taskdata">
+                <span class="tasktitle">Owner: </span><span>Owner Name</span>
+            </div>
+            <div class="taskdata">
+                <span class="tasktitle">Deadline: </span><span>08/11/2023</span>
+            </div>
+            <div class="taskdata">
+                <span class="tasktitle">Description: </span><span class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, accusantium!</span>
+            </div>
+    </div>
+  <script src="manager_view_project.js"></script>
 </body>
 </html>

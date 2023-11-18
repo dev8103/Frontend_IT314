@@ -455,7 +455,7 @@
      
     .project-header input{
         width: auto;
-        height: 30px;
+        height: 35px;
         border-style: none;
         border: 2px solid black;
         border-radius: 10px;
@@ -466,5 +466,9 @@
     .project-header input::placeholder{
         color: white;
     }
-    
+    .progress-edit-btn{
+        display: flex;
+        justify-content: space-between;
+        width: 470px;
+     }
 
