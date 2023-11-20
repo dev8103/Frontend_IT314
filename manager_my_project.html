@@ -1,4 +1,4 @@
- <!-- {% load static %} -->
+<!-- <-- {% load static %} -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="{%static 'css/dashboard_res.css' %}">
     <link rel="stylesheet" href="{%static 'css/create_project.css' %}"> -->
     <link rel="stylesheet"
-    href="./css/manager_view_project.css">
+    href="./css/my_project_main.css">
 <link rel="stylesheet"
-    href="./css/manager_view_project_res.css">
+    href="./css/my_project_res.css">
 </head>
 
 <body>
@@ -115,82 +115,50 @@
                     alt="search-button">
             </div>
         </div> -->
-        <!-- <div class="desc-box">
-          <div class="description-box">
-            <div class="taskdata">
-              <span class="tasktitle">Task Name: </span><span class="tasktitle1">Task 1</span>
-             </div>
-             <div class="taskdata">
-               <span class="tasktitle">Deadline: </span><span>08/11/2023</span>
-             </div>
-             <div class="taskdata">
-               <span class="tasktitle">Description: </span><span class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, accusantium!</span>
-             </div>
-           </div>
-         </div> -->
-     
         <div class="project-container">
           <div class="project-header">
             <div class="status-container">
-              <h1 class="project-header-text">Project name</h1>
+              <h1 class="project-header-text">My Project</h1>
               <select id="select1" onchange="getOption()">
                 <option value="#">Search for status</option>
                 <option value="Show all">Show all</option>
                 <option value="I">Pending</option>
                 <option value="C">Completed</option>
-                <option value="R">Submitted for review</option>
+                <option value="R">Submitted for reivew</option>
               </select>
             </div>
-            <div class="progress-create-btn">
-                <a href="./project_details.html"><button class="project-header-btn btns">View Project Details</button></a>
-                <a href="./progress.html"><button class="project-header-btn btns">View Progress</button></a>
-                <a href="./create_task.html"><button class="project-header-btn btns">Create Task</button></a>
-                <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Status.." title="Type in a name"> -->
-            </div>
+            <!-- <a href=""><button class="project-header-btn">View Progress</button></a> -->
+            <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Status.." title="Type in a name">  -->
           </div>
     
           <div class="project-body">
-            <table class="main-table" id="maintable">
+            <table class="main-table">
               <thead>
-                <th>Tasks</th>
+                <th>Projects</th>
                 <th>Status</th>
-                <th>View task</th>
+                <th>View Project</th>
               </thead>
               <tbody>
-                <tr class="table-row" id="tablerow1">
-                    <td class="table-data">Task 1</td>
+    
+                <tr class="table-row">
+                    <td class="table-data">Project 1 </td>
                     <td class="table-data"><h3 class="label-tag">Pending</h3></td>
-                    <!-- <td class="table-data"><a href="edit_task.html"><button class="button-tag btns">Edit</button></a></td>
-                    <td class="table-data"><button class="button-tag btns" onclick="deleteRow(this)">Delete</button></td> -->
-                    <td class="table-data"><a href="manager_view_details.html"><button class="button-tag btns">View</button></a></td>
+                    <td class="table-data"><a href="./manager_view_project.html"><button class="button-tag btns">View</button></a></td>
                   </tr>
-                  <tr class="table-row" id="tablerow2">
-                    <td class="table-data">Task 2 </td>
+                  <tr class="table-row">
+                    <td class="table-data">Project 2 </td>
                     <td class="table-data"><h3 class="label-tag">Pending</h3></td>
-                    <!-- <td class="table-data"><a href="edit_task.html"><button class="button-tag btns">Edit</button></a></td>
-                    <td class="table-data"><button class="button-tag btns" onclick="deleteRow(this)">Delete</button></td> -->
-                    <td class="table-data"><a href="manager_view_details.html"><button class="button-tag btns">View</button></a></td>
+                    <td class="table-data"><a href="./manager_view_project.html"><button class="button-tag btns">View</button></a></td>
                 </tr>
-                  </tr>
-                  <tr class="table-row" id="tablerow3">
-                    <td class="table-data">Task 3 </td>
-                    <td class="table-data"><h3 class="label-tag">Completed</h3></td>
-                    <!-- <td class="table-data"><a href="edit_task.html"><button class="button-tag btns">Edit</button></a></td>
-                    <td class="table-data"><button class="button-tag btns" onclick="deleteRow(this)">Delete</button></td> -->
-                    <td class="table-data"><a href="manager_view_details.html"><button class="button-tag btns">View</button></a></td>
-                </tr>
-                  <tr class="table-row" id="tablerow3">
-                    <td class="table-data">Task 3 </td>
-                    <td class="table-data"><h3 class="label-tag">Submitted for review</h3></td>
-                    <!-- <td class="table-data"><a href="edit_task.html"><button class="button-tag btns">Edit</button></a></td>
-                    <td class="table-data"><button class="button-tag btns" onclick="deleteRow(this)">Delete</button></td> -->
-                    <td class="table-data"><a href="manager_view_details.html"><button class="button-tag btns">View</button></a></td>
-                </tr>
+    
               </tbody>
             </table>
           </div>
+    
+        </div>
       </div>
-      <script src="manager_view_project.js"></script>
+
+    <script src="{%static 'js/dashboard.js' %}"></script>
 </body>
 
 </html>

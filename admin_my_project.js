@@ -1,10 +1,13 @@
-let menuicn = document.querySelector(".menuicn");
-let nav = document.querySelector(".navcontainer");
 
-menuicn.addEventListener("click", () => {
-	nav.classList.toggle("navclose");
-})
-
+function deleteRow(r) {
+    i=r.parentNode.parentNode.rowIndex;
+    let text = "Press a OK for Delete Project!";
+    if (confirm(text) == true) {
+        document.getElementById("maintable").deleteRow(i);
+    } else {
+        text = "You canceled!";
+    }
+}
 
 function myFunction(filter) {
   var table, tr, td, i, txtValue;

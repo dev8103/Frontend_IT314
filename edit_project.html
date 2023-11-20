@@ -1,3 +1,4 @@
+<!-- <-- {% load static %} -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,10 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, 
 				initial-scale=1.0">
-    <title>dashboard</title>
-    <link rel="stylesheet" href="./css/dashboard_main.css">
-    <link rel="stylesheet" href="./css/dashboard_res.css">
-    <link rel="stylesheet" href="./css/create_project.css">
+    <title>Edit Project</title>
+    <!-- <link rel="stylesheet" href="{%static 'css/dashboard_main.css' %}">
+    <link rel="stylesheet" href="{%static 'css/dashboard_res.css' %}">
+    <link rel="stylesheet" href="{%static 'css/create_project.css' %}"> -->
+    <link rel="stylesheet" href="css/dashboard_main.css">
+    <link rel="stylesheet" href="css/dashboard_res.css">
+    <link rel="stylesheet" href="css/create_project.css">
 </head>
 
 <body>
@@ -26,7 +30,8 @@
         <div class="message">
             <div class="circle"></div>
             <a href="./profile.html" style="display: flex;justify-content: center;align-items: center;">
-                <img src="./image/icons8-notification-50.png" class="icn" alt="">
+                <!-- src="{%static '/img/icons8-notification-50.png' %}" -->
+                <img src="image/icons8-notification-50.png" class="icn" alt="">
             </a>
             <div class="dp">
                 <a href="./profile.html" style="display: flex;justify-content: center;align-items: center;">
@@ -38,53 +43,71 @@
     </header>
 
     <div class="main-container">
-        <div class="navcontainer">
-            <nav class="nav">
-                <div class="nav-upper-options">
-                    <a href="./dashboard.html">
-                        <div class="nav-option option1">
-                            <img src="./image/dashboard.svg" class="nav-img" alt="dashboard">
-                            <h3> Dashboard</h3>
-                        </div>
-                    </a>
-                    <a href="./profile.html">
-                        <div class="option2 nav-option">
-                            <img src="./image/my_profile.svg" class="nav-img" alt="articles">
-                            <h3> My Profile</h3>
-                        </div>
-                    </a>
+		<div class="navcontainer">
+			<nav class="nav">
+				<div class="nav-upper-options">
+					<a href="/dashboard">
+						<div class="nav-option option1">
+                            <!-- src="{% static '/img/dashboard.svg' %}" -->
+							<img src="image/dashboard.svg"
+								class="nav-img"
+								alt="dashboard">
+							<h3> Dashboard</h3>
+						</div>
+					</a>
+					<a href="/dashboard/myprofile">
+						<div class="option2 nav-option">
+                            <!-- src="{%static '/img/my_profile.svg' %}" -->
+							<img src="image/my_profile.svg"
+								class="nav-img"
+								alt="articles">
+							<h3> My Profile</h3>
+						</div>
+					</a>
 
-                    <a href="./MyProject.html">
-                        <div class="nav-option option3">
-                            <img src="./image/my_project.svg" class="nav-img" alt="report">
-                            <h3> My Project </h3>
-                        </div>
-                    </a>
+					<a href="/dashboard/project">
+						<div class="nav-option option3">
+                            <!-- src="{%static '/img/my_project.svg' %}" -->
+							<img src="image/my_project.svg"
+								class="nav-img"
+								alt="report">
+							<h3> My Project </h3>
+						</div>
+					</a>
 
-                    <a href="">
-                        <div class="nav-option option4">
-                            <img src="./image/progress.png" class="nav-img" alt="institution">
-                            <h3> Progress </h3>
-                        </div>
-                    </a>
+					<a href="">
+						<div class="nav-option option4">
+                            <!-- src="{%static '/img/progress.png' %}" -->
+							<img src="image/progress.png"
+								class="nav-img"
+								alt="institution">
+							<h3> Progress </h3>
+						</div>
+					</a>
 
-                    <a href="">
-                        <div class="nav-option option5">
-                            <img src="./image/chat.svg" class="nav-img" alt="blog">
-                            <h3> Chat </h3>
-                        </div>
-                    </a>
+					<a href="">
+						<div class="nav-option option5">
+                            <!-- src="{%static '/img/chat.svg' %}" -->
+							<img src="image/chat.svg"
+								class="nav-img"
+								alt="blog">
+							<h3> Chat </h3>
+						</div>
+					</a>
+					
+					<a href="{% url 'logout' %}">
+						<div class="nav-option logout">
+                            <!-- src="{%static '/img/logout.svg' %}" -->
+							<img src="image/logout.svg"
+								class="nav-img"
+								alt="logout">
+							<h3>Logout</h3>
+						</div>
+					</a>
 
-                    <a href="">
-                        <div class="nav-option logout">
-                            <img src="./image/logout.svg" class="nav-img" alt="logout">
-                            <h3>Logout</h3>
-                        </div>
-                    </a>
-
-                </div>
-            </nav>
-        </div>
+				</div>
+			</nav>
+		</div>
         <div class="main">
             <div class="project-container"> 
                 <div class="project-header">
@@ -92,32 +115,43 @@
                 </div>
                 <div class="project-body">
                     <form action="" method="post">
+                        {% csrf_token %}
                         <div class="field">
-                            <label for="title"> Project Title : </label>
-                            <input type="text" name="title" id="title" placeholder="Enter Project Title" required>
+                            <label for="project_title"> Project Title : </label>
+                            <input type="text" id="title" name="project_title" value="{{ project.projectTitle }}" required>
                         </div>
-
+                    
                         <div class="field">
                             <label for="manager"> Select Manager :</label>
-                            <select name="manager" id="manager">
-                                <option value="">Select Manager</option>
-                                <option value="manager1">manager1</option>
-                                <option value="manager2">manager2</option>
-                              </select>
+                            <select name="manager" id="manager" required>
+                                <option value="" disabled>Select Manager</option>
+                                {% for manager in managers %}
+                                    <option value="{{ manager.first_name }} - {{ manager.email }}" {% if project.managerEmail == manager.email %} selected {% endif %}>
+                                        {{ manager.first_name }} - {{ manager.email }}
+                                    </option>
+                                {% endfor %}
+                            </select>
                         </div>
-
+                    
                         <div class="field">
                             <label for="deadline"> Select Deadline :</label>
-                            <input type="datetime-local" name="deadline" id="deadline">
+                            <input type="datetime-local" id="deadline" name="deadline" min="{{ project.deadline|date:'Y-m-d\TH:i' }}" value="{{ project.deadline|date:'Y-m-d\TH:i' }}" required>
                         </div>
-
+                    
                         <div class="field">
                             <label for="description"> Description :</label>
-                            <input type="text" name="description" id="description">
+                            <input type="text" id="description" name="description" value="{{ project.description }}">
                         </div>
-
                         <div class="field">
-                            <input id="submit" type="submit" value="Save Changes">
+                            <label for="projectstatus">Project Status :</label>
+                            <select name="projectstatus" id="projectstatus" required>
+                                <!-- <option value="none" selected disabled hidden>--choose option</option> -->
+                                <option value="ongoing">Ongoing</option>
+                                <option value="ongoing">Completed</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <button type="submit" id="submit">Update Project</button>
                         </div>
                     </form>
                 </div>
@@ -125,7 +159,8 @@
         </div>
     </div>
 
-    <script src="./dashboard.js"></script>
+    <script src="{%static 'js/dashboard.js' %}"></script>
+    <script src="edit_project.js"></script>
 </body>
 
 </html>

@@ -285,17 +285,21 @@
         letter-spacing: 3px;
     }
 
-
+/* 
     
     .project-container {
-        min-height: 300px;
-        max-width: 1200px;
+        min-height: 400px;
+        max-width: 500px;
         margin: 70px auto 0px auto;
         background-color: #ffffff;
         border-radius: 30px;
         box-shadow: 3px 3px 10px rgb(188, 188, 188);
         padding: 0px 20px 20px 20px;
-    }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    } */
     
     .project-header {
         height: auto;
@@ -400,6 +404,14 @@
         font-weight: 600;
         border: none;
         cursor: pointer;
+        padding: 2px;
+    }
+    .btns{
+        transition: all 0.4s;
+    }
+
+    .btns:hover{
+        transform: scale(1.1);
     }
     
     .table-data a:link,a:visited{
@@ -409,24 +421,6 @@
     .table-data a{
         color: inherit;
     }
-
-    .description-box{
-        height: 200px;
-        max-height: 300px;
-        overflow-y: auto;
-        width: 600px;
-        background-color: aqua;
-        border-radius: 12px;
-        box-shadow: 7px 6px rgb(6, 88, 88);
-        display: none;
-        flex-direction: column;
-        justify-content:space-evenly;
-        transition: all 0.4s;
-     }
-     
-     .description-box:hover{
-        transform: scale(1.1);
-     }
 
      .taskdata{
         font-size: 22px;
@@ -446,41 +440,94 @@
         flex-wrap: wrap;
      }
 
-    .btns{
-        transition: all 0.4s;
-    }
-    .btns:hover{
-        transform: scale(1.1);
-    }
-     
-    .project-header input{
-        width: auto;
-        height: 35px;
-        border-style: none;
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: 2px;
-        color: white;
-        background-color:#0e5469;
-    }
-    .project-header input::placeholder{
-        color: white;
-    }
-    .progress-edit-btn{
+     .progress-create-btn{
         display: flex;
         justify-content: space-between;
-        width: 300px;
+        width: 20%;
      }
-     .status-container{
+
+     .details-container{
+        height: 200px;
+        max-height: 300px;
+        overflow-y: auto;
         display: flex;
-        justify-content: space-evenly;
-        width: 400px;
+        flex-direction: column;
+        align-items: center;
+        width: 600px;
+        background-color: aqua;
+        border-radius: 12px;
+        box-shadow: 7px 6px rgb(6, 88, 88);
+        flex-direction: column;
+        justify-content:space-evenly;
+        transition: all 0.4s;
      }
-     #select1{
-        background-color: #5500cb;
+     .editdeletebtn button{
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        background-color: #0c007d;
         color: white;
-        font-size: 14px;
-        border: none;
         border-radius: 10px;
+        font-size: 22px;
+        letter-spacing: 0px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        padding: 2px;
+        margin-top: 20px;
      }
-     
+ 
+     .project-container {
+        min-height: 400px;
+        max-width: 500px;
+        margin: 70px auto 0px auto;
+        background-color: #3badd0;
+        border-radius: 30px;
+        box-shadow: 3px 3px 10px rgb(188, 188, 188);
+        padding: 0px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow-y: auto;
+    }
+    
+    .editdeletebtn{
+        width: 100%;
+        text-align: center;
+    }
+    .statuscheck{
+        background-color: #6eb6cd;
+        padding: 2px;
+        border: none;
+        border: 2px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .confirmation{
+       height: 120px;
+       width: 400px;
+       background-color:white;
+       display: flex;
+       flex-direction: column;
+       align-self: center;
+       justify-content: space-evenly;
+       border-radius: 10px;
+       position: absolute;
+       top: 250px;
+       text-align: center;
+       font-size: 18px;
+       left: 650px;
+       display: none;
+    }
+    .confirmation-btn{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .confirmation-btn button{
+        height: 30px;
+        width: 100px;
+        border: none;
+        background-color: #3badd0;
+        cursor: pointer;
+    }

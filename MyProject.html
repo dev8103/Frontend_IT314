@@ -121,8 +121,17 @@ tgrkjk
 
     <div class="project-container">
       <div class="project-header">
-        <h1 class="project-header-text">My Project</h1>
+        <div class="status-container">
+          <h1 class="project-header-text">My Project</h1>
+          <select id="select1" onchange="getOption()">
+            <option value="#">Search for status</option>
+            <option value="Show all">Show all</option>
+            <option value="I">Pending</option>
+            <option value="C">Completed</option>
+          </select>
+        </div>
         <!-- <a href=""><button class="project-header-btn">View Progress</button></a> -->
+        <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Status.." title="Type in a name"> -->
       </div>
 
       <div class="project-body">
@@ -144,7 +153,6 @@ tgrkjk
               <td class="table-data"><h3 class="label-tag">Pending</h3></td>
               <td class="table-data"><a href="./view_project.html"><button class="button-tag btns">View</button></a></td>
             </tr>
-
           </tbody>
         </table>
       </div>

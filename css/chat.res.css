@@ -1,14 +1,15 @@
 /* Responsive CSS Here */
 
 
-@media screen and (max-width: 850px)
-{
+@media screen and (max-width: 850px) {
     .nav-img {
         height: 30px;
     }
+
     .nav-option {
         gap: 30px;
     }
+
     .nav-option h3 {
         font-size: 20px;
     }
@@ -20,51 +21,58 @@
         top: 0;
         left: -100vw;
     }
+
     .nav {
         width: 100%;
         position: absolute;
     }
+
     .navclose {
         left: 00px;
     }
 
-    .main
-    {
+    .main {
         padding: 40px 30px 30px 30px;
     }
 
 
-    .main-table{
+    .main-table {
         width: 700px;
     }
 
 }
 
 
-@media screen and (max-width: 490px)
-{
+@media screen and (max-width: 490px) {
     .message {
         display: none;
     }
+
     .logosec {
         width: 100%;
         justify-content: space-between;
     }
+
     .logo {
         font-size: 20px;
     }
+
     .menuicn {
         height: 25px;
     }
+
     .nav-img {
         height: 25px;
     }
+
     .nav-option {
         gap: 25px;
     }
+
     .nav-option h3 {
         font-size: 12px;
     }
+
     .nav-upper-options {
         gap: 15px;
     }
@@ -75,21 +83,21 @@
         height: 35px;
     }
 
-    .main-table{
+    .main-table {
         width: 550px;
     }
 }
 
-@media screen and (max-width: 400px)
-{
+@media screen and (max-width: 400px) {
     .project-header {
         height: auto;
         padding: 10px 5px 5px 5px;
     }
-     .project-header-text {
+
+    .project-header-text {
         font-size: 18px;
     }
-    
+
     .project-header-btn {
         width: auto;
         font-size: 10px;
@@ -98,23 +106,26 @@
 }
 
 @media screen and (max-width: 320px) {
-   
+
     .project-header-btn {
         width: auto;
         font-size: 8px;
         height: 27px;
     }
+
     .project-header {
         height: auto;
         padding: 10px 5px 5px 5px;
     }
-     .project-header-text {
+
+    .project-header-text {
         font-size: 20px;
     }
-   
+
     .project-body {
         padding: 10px;
     }
+
     .label-tag {
         width: 70px;
     }
