@@ -281,6 +281,10 @@ footer{
     text-align: center;
 }
 
+.footer-para{
+    font-size: 20px;
+}
+
 .footer-content h3{
     font-size: 2.1rem;
     font-weight: 500;
