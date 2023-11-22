@@ -3,17 +3,14 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible"
-		content="IE=edge">
-	<meta name="viewport"
-		content="width=device-width, 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, 
 				initial-scale=1.0">
 	<title>Profile</title>
-	<link rel="stylesheet"
-		href="./css/profile.css">
-	<link rel="stylesheet"
-		href="./css/profile_responsive.css">
+	<link rel="stylesheet" href="./css/profile.css">
+	<link rel="stylesheet" href="./css/profile_responsive.css">
 </head>
+
 <body>
 
 	<!-- for header part -->
@@ -21,9 +18,7 @@
 
 		<div class="logosec">
 			<img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
-				class="icn menuicn"
-				id="menuicn"
-				alt="menu-icon">
+				class="icn menuicn" id="menuicn" alt="menu-icon">
 			<div class="logo">ProPlanning</div>
 		</div>
 
@@ -48,53 +43,41 @@
 				<div class="nav-upper-options">
 					<a href="./dashboard.html">
 						<div class="nav-option option1">
-							<img src="./image/dashboard.svg"
-								class="nav-img"
-								alt="dashboard">
+							<img src="./image/dashboard.svg" class="nav-img" alt="dashboard">
 							<h3> Dashboard</h3>
 						</div>
 					</a>
 					<a href="./profile.html">
 						<div class="option2 nav-option">
-							<img src="./image/my_profile.svg"
-								class="nav-img"
-								alt="articles">
+							<img src="./image/my_profile.svg" class="nav-img" alt="articles">
 							<h3> My Profile</h3>
 						</div>
 					</a>
 
 					<a href="./MyProject.html">
 						<div class="nav-option option3">
-							<img src="./image/my_project.svg"
-								class="nav-img"
-								alt="report">
+							<img src="./image/my_project.svg" class="nav-img" alt="report">
 							<h3> My Project </h3>
 						</div>
 					</a>
 
 					<a href="">
 						<div class="nav-option option4">
-							<img src="./image/progress.png"
-								class="nav-img"
-								alt="institution">
+							<img src="./image/progress.png" class="nav-img" alt="institution">
 							<h3> Progress </h3>
 						</div>
 					</a>
 
 					<a href="">
 						<div class="nav-option option5">
-							<img src="./image/chat.svg"
-								class="nav-img"
-								alt="blog">
+							<img src="./image/chat.svg" class="nav-img" alt="blog">
 							<h3> Chat </h3>
 						</div>
 					</a>
-					
+
 					<a href="">
 						<div class="nav-option logout">
-							<img src="./image/logout.svg"
-								class="nav-img"
-								alt="logout">
+							<img src="./image/logout.svg" class="nav-img" alt="logout">
 							<h3>Logout</h3>
 						</div>
 					</a>
@@ -103,66 +86,51 @@
 			</nav>
 		</div>
 		<div class="main">
-
-			<!-- <div class="searchbar2">
-				<input type="text"
-					name=""
-					id=""
-					placeholder="Search">
-				<div class="searchbtn">
-				<img src="https://tse3.mm.bing.net/th?id=OIP.qj2wH0lhKIfZH159GxkpNgHaHa&pid=Api&P=0&h=180"
-						class="icn srchicn"
-						alt="search-button">
-				</div>
-			</div> -->
 			<div class="container">
+				<div class="header">
+					<h1>My Profile</h1>
+				</div>
 				<div class="profile">
-					<div class="profile1">
-						<div class="image1"></div>
-						<p class="name">John Doe</p>
-						<p class="role">Full Stack Developer</p>
+					<div class="field">
+						<label for="fullname">Full Name : </label>
+						<input type="text" name="name" id="fullname" value="Full Name" readonly>
 					</div>
-					<button class="btn" onclick="editprofile()">Edit Profile</button>
-				</div>
-				<div class="profile2">
-					<div class="profiledata">
-						<div>
-							<label for="fname">Full Name</label>
-							<input type="text" name="firstname" id="fname" value="Kenneth Valdez" readonly>
-							<br>
-							<div class="underline"></div>
-							<label for="mail">Email</label>
-							<input type="email" name="mail" id="mail" value="fip@jukmuh.al" readonly>
-							<br>
-							<div class="underline"></div>
-							<label for="phone">Phone</label>
-							<input type="text" name="phone" id="phone" value="(239) 816-9029" readonly>
-							<br>
-							<div class="underline"></div>
-							<label for="mobile">Mobile</label>
-							<input type="text" name="mobile" id="mobile" value="(239) 816-9029" readonly>
-							<br>
-							<div class="underline"></div>
-							<label for="address">Address</label>
-							<input type="text" name="address" id="address" value="Bay Area, San Francisco, CA" readonly>
-							<br>
-							<div class="underline"></div>
-							<label for="employeeid">Employee ID</label>
-							<input type="text" name="employeeid" id="employeeid" value="2565675354" readonly>
-							<br>
+
+					<div class="field">
+						<label for="email">Email : </label>
+						<input type="email" name="email" id="email" value="email@gmail.com" readonly>
+					</div>
+
+					<div class="field">
+						<label for="contact">Contact No. : </label>
+						<input type="text" name="contact" id="contact" value="+91 9876543210" readonly>
+					</div>
+					
+					<div class="field">
+						<label for="role">Role : </label>
+						<input type="text" name="role" id="role" value="Manager" readonly>
+					</div>
+
+					<div class="field">
+						<label for="company">Company Name : </label>
+						<input type="text" name="company" id="company" value="Microsoft" readonly>
+					</div>
+
+					<input type="button" value="Edit Profile" id="button1" onclick="editprofile()">
+
+					<div class="buttons">
+						<input id="save_button" type="button" value="Save Changes" onclick="savechanges()">
+
+						<div class="change-pass">
+							<a id="change_pass_button" href="change_password.html">Change Password</a>
 						</div>
-						<div class="underline"></div>
-						<div class="btn2">
-							<button class="savechanges" onclick="savechange()">Save Changes</button>
-							<button class="changepassword">Change Password</button>
-						</div>
-						<button class="btn3" onclick="editprofile()">Edit Profile</button>
 					</div>
 				</div>
+			</div>
 		</div>
-	</div>
 	</div>
 
 	<script src="./profile.js"></script>
 </body>
+
 </html>

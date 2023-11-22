@@ -6,36 +6,31 @@ menuicn.addEventListener("click", () => {
 })
 
 
-const fname=document.querySelector("#fname");
-const mail=document.querySelector("#mail");
-const phone=document.querySelector("#phone");
-const mobile=document.querySelector("#mobile");
-const address=document.querySelector("#address");
-const employeeid=document.querySelector("#employeeid");
-const savechanges=document.querySelector(".savechanges");
-const changepassword=document.querySelector(".changepassword");
-const btn=document.querySelector(".btn");
+const fullname=document.querySelector("#fullname");
+const email=document.querySelector("#email");
+const contact=document.querySelector("#contact");
+const role=document.querySelector("#role");
+const company=document.querySelector("#company");
+// const employeeid=document.querySelector("#employeeid");
+// const savechanges=document.querySelector("#save_button");
+// const changepassword=document.querySelector(".changepassword");
+const btn=document.querySelector("#button1");
+const buttons=document.querySelector(".buttons");
 
 function editprofile(){
-    fname.readOnly = false;
-    mail.readOnly = false;
-    phone.readOnly = false;
-    mobile.readOnly = false;
-    address.readOnly = false;
-    employeeid.readOnly = false;
-    savechanges.style.visibility ="visible"; 
-    changepassword.style.visibility ="visible"; 
-    btn.style.visibility="hidden";
+    fullname.readOnly = false;
+    contact.readOnly = false;
+    role.readOnly = false;
+    company.readOnly = false;
+    buttons.style.display ="flex"; 
+    btn.style.display="none";
 }
 
-function savechange(){
-    btn.style.visibility="visible";
-    savechanges.style.visibility="hidden";
-    changepassword.style.visibility ="hidden";
-    fname.readOnly = true;
-    mail.readOnly = true;
-    phone.readOnly = true;
-    mobile.readOnly = true;
-    address.readOnly = true;
-    employeeid.readOnly = true;
+function savechanges(){
+    btn.style.display="block";
+    buttons.style.display="none";
+    fullname.readOnly = true;
+    contact.readOnly = true;
+    role.readOnly = true;
+    company.readOnly = true;
 }
