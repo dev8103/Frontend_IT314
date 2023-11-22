@@ -140,3 +140,7 @@ function getOption() {
   myFunction(output);
 }
 
+
+document.querySelector(".cross").addEventListener('click',()=>{
+  document.querySelector(".confirmation").style.display="none";     
+});
