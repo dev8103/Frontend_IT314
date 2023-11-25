@@ -90,6 +90,7 @@ function deleteRow(r) {
 document.querySelector(".statuscheck").addEventListener('click',()=>{
   if(document.querySelector(".statuscheck").textContent=="Submitted for review"){
      document.querySelector(".confirmation").style.display="flex";
+    // window.location.assign("http://127.0.0.1:5500/document_details.html");
     }
   })
 document.querySelector(".confirmation-btn1").addEventListener('click',()=>{
