@@ -111,10 +111,10 @@
         height: auto;
         padding: 10px 5px 5px 5px;
     }
-     .project-header-text {
+    .project-header-text {
         font-size: 18px;
     }
-    
+
     .project-header-btn {
         width: auto;
         width: 60px;
@@ -123,7 +123,7 @@
     }
 }
 
-@media screen and (max-width: 320px) 
+@media screen and (max-width: 320px)
 {
     .project-header-btn {
         width: auto;
@@ -141,10 +141,10 @@
         height: auto;
         padding: 10px 5px 5px 5px;
     }
-     .project-header-text {
+    .project-header-text {
         font-size: 20px;
     }
-   
+
     .project-body {
         padding: 10px;
     }
