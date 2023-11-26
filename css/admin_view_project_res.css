@@ -152,3 +152,14 @@
         width: 70px;
     }
 }
+
+@media screen and (min-width: 390px) and (max-width:550px)
+{
+    #select1
+    {
+        width: 6rem;
+        height: 3rem;
+    }
+
+}
+

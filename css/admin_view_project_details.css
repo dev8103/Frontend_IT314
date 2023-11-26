@@ -542,3 +542,23 @@ header {
     padding: 4px;
     color: white;
 }
+
+@media screen and (max-width:550px){
+    
+    .project-container
+    {
+        width: 100%;
+    }
+
+    .taskdata
+    {
+        font-size: 18px;
+    }
+
+    .tasktitle
+    {
+        font-size: 21px;
+    }
+}
+
+

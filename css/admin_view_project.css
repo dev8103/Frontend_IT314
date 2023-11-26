@@ -299,11 +299,11 @@ header {
 
 .project-header {
     height: auto;
-    width: 100%;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 20px 10px 20px;
+    padding: 20px 0px 10px 20px;
     border-bottom: 2px solid #00303f;
     flex-wrap: wrap;
 }
@@ -317,7 +317,6 @@ header {
 .project-header-btn{
     height: 35px;
     width: auto;
-    padding: 0px 5px;
     border-radius: 8px;
     background-color: #00303f;
     color: white;
@@ -335,9 +334,7 @@ header {
 }
 
 .project-body {
-    max-width: 1160px;
     overflow-x: auto;
-    padding: 20px;
 }
 
 .main-table{
@@ -405,6 +402,8 @@ header {
 }
 .btns{
     transition: all 0.4s;
+    width: auto;
+    padding: 2px;
 }
 
 .btns:hover{
@@ -452,8 +451,9 @@ header {
 
 .progress-create-btn{
     display: flex;
-    justify-content: flex-end;
-    width: 400px;
+    justify-content: space-around;
+    width: 350px;
+    
 }
 
 .details-container{
@@ -518,11 +518,20 @@ header {
 }
 .progress-header-btn{
     width: auto;
-    height: 35px;
+    height: 45px;
     border-style: none;
     border: 2px solid black;
     border-radius: 10px;
     padding: 3px;
+    color: white;
+    background-color:#00303f;
+}
+.project-header-btn{
+    width: auto;
+    height: 35px;
+    border-style: none;
+    border: 2px solid black;
+    border-radius: 10px;
     color: white;
     background-color:#00303f;
 }
