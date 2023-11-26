@@ -319,7 +319,7 @@ header {
     width: auto;
     padding: 0px 5px;
     border-radius: 8px;
-    background-color: #5500cb;
+    background-color: #00303f;
     color: white;
     font-size: 15px;
     border: none;
@@ -363,7 +363,7 @@ header {
 
 .label-tag
 {
-    width: 100px;
+    width: 130px;
     display: inline-block;
     text-align: center;
     background-color: rgb(0, 177, 0);
@@ -379,7 +379,7 @@ header {
 {
     width: 100px;
     text-align: center;
-    background-color: #0c007d;
+    background-color: #00303f;
     color: white;
     border-radius: 4px;
     font-size: 14px;
@@ -393,7 +393,7 @@ header {
 {
     width: 100px;
     text-align: center;
-    background-color: #0c007d;
+    background-color: #00303f;
     color: white;
     border-radius: 4px;
     font-size: 14px;
@@ -483,7 +483,7 @@ header {
 .details-container button{
     width: 120px;
     text-align: center;
-    background-color: #0c007d;
+    background-color: #00303f;
     color: white;
     border-radius: 4px;
     font-size: 16px;
@@ -512,9 +512,19 @@ header {
     border-style: none;
     border: 2px solid black;
     border-radius: 10px;
-    padding: 2px;
+    padding: 3px;
     color: white;
-    background-color:#0e5469;
+    background-color:#00303f;
+}
+.progress-header-btn{
+    width: auto;
+    height: 35px;
+    border-style: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 3px;
+    color: white;
+    background-color:#00303f;
 }
 .project-header input::placeholder{
     color: white;
@@ -526,9 +536,10 @@ header {
     width: 400px;
 }
 #select1{
-    background-color: #5500cb;
+    background-color: #00303f;
     color: white;
     font-size: 14px;
     border: none;
+    padding: 2px;
     border-radius: 10px;
 }
