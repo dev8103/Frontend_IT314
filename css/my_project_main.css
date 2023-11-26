@@ -134,7 +134,7 @@ header {
     z-index: 1;
 }
 
-.dpicn 
+.dpicn
 {
     height: 40px;
     width: 40px;
@@ -321,7 +321,7 @@ header {
     width: auto;
     padding: 0px 5px;
     border-radius: 8px;
-    background-color: #5500cb;
+    background-color: #00303f;
     color: white;
     font-size: 15px;
     border: none;
@@ -365,7 +365,7 @@ header {
 
 .label-tag
 {
-    width: 100px;
+    width: 130px;
     display: inline-block;
     text-align: center;
     background-color: rgb(0, 177, 0);
@@ -380,7 +380,7 @@ header {
 {
     width: 100px;
     text-align: center;
-    background-color: #0c007d;
+    background-color: #00303f;
     color: white;
     border-radius: 4px;
     font-size: 14px;
@@ -399,7 +399,7 @@ header {
 {
     width: 100px;
     text-align: center;
-    background-color: #0c007d;
+    background-color: #00303f;
     color: white;
     border-radius: 4px;
     font-size: 14px;
@@ -425,7 +425,7 @@ header {
     border-radius: 10px;
     padding: 2px;
     color: white;
-    background-color:#0e5469;
+    background-color:#00303f;
 }
 .project-header input::placeholder{
     color: white;
@@ -435,12 +435,11 @@ header {
     display: flex;
     justify-content: space-evenly;
     width: 400px;
- }
- #select1{
-    background-color: #5500cb;
+}
+#select1{
+    background-color: #00303f;
     color: white;
     font-size: 14px;
     border: none;
     border-radius: 10px;
- }
- 
+}
