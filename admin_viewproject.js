@@ -87,19 +87,27 @@ function deleteRow(r) {
 //     btn2.onclick=function() { console.log(tablerow); showtask(j,btn2);};
 // }
 
-document.querySelector(".statuscheck").addEventListener('click',()=>{
-    if(document.querySelector(".statuscheck").textContent=="Submitted for review"){
-        document.querySelector(".confirmation").style.display="flex";
-    }
-})
-document.querySelector(".confirmation-btn1").addEventListener('click',()=>{
-    document.querySelector(".statuscheck").textContent="Completed";
-    document.querySelector(".confirmation").style.display="none";
-});
-document.querySelector(".confirmation-btn2").addEventListener('click',()=>{
-    document.querySelector(".statuscheck").textContent="Inprogress";
-    document.querySelector(".confirmation").style.display="none";
-});
+// document.querySelector(".statuscheck").addEventListener('click',()=>{
+//     if(document.querySelector(".statuscheck").textContent=="Completed"){
+//         document.querySelector(".confirmation").style.display="flex";
+//     }
+// })
+// document.querySelector(".confirmation-btn1").addEventListener('click',()=>{
+//     document.querySelector(".statuscheck").textContent="Accept";
+//     document.querySelector(".confirmation").style.display="none";
+// });
+// document.querySelector(".confirmation-btn2").addEventListener('click',()=>{
+//     document.querySelector(".statuscheck").textContent="Decline";
+//     document.querySelector(".confirmation").style.display="none";
+// });
+
+if(document.getElementById("statusdetail").textContent=="In progress"){
+    document.querySelector(".statuscheck").style.display="flex";
+}
+else{
+    console.log(123);
+    document.querySelector(".statuscheck").style.display="none";
+}
 
 
 function myFunction(filter) {
